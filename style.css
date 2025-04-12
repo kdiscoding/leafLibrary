@@ -1,0 +1,83 @@
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(214, 213, 213, 0.465);
+}
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#newsletter-alert {
+  display: none;
+}
+.leaflibrary {
+  font-weight: 700;
+}
+.color-change {
+  color: #adc178;
+}
+.header {
+  background-color: #6c584c;
+  color: #a98467;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  font-size: 30px;
+  margin: 0;
+}
+.features {
+  background-color: #d0cfcb;
+}
+.productBackClr {
+  background-color: #6c584c;
+}
+.top-section {
+  background-color: #6c584c;
+  color: #f0ead2;
+  font-size: 20px;
+  padding: 25px 200px 100px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.top-description {
+  flex: 0 1 500px;
+}
+.top-header {
+  margin-bottom: 0;
+}
+img {
+  border-radius: 8px;
+}
+.top-image img {
+  border: 3px solid #f0ead2;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
+.description {
+  margin: 8px 0;
+}
+button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #adc178;
+  color: #f0ead2;
+  font-weight: 1000;
+  flex: 0 0 auto;
+}
+button.top-signup-button {
+  border: none;
+}
+p {
+  font-size: 15px;
+}
+.btns {
+  margin-top: 24px;
+}

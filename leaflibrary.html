@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top header">
+      <div class="container">
+        <div class="leaflibrary"><span class="color-change">leaf</span>library</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- top section -->
+    <div class="top-section">
+      <div class="top-description">
+        <h1 class="top-header">Welcome to <span class="color-change">leaf</span>library!</h1>
+        <p class="description">
+          Your leafy companion for all things green. Dive in and discover the beauty of every leaf you see.
+        </p>
+        <button class="top-signup-button"><a class="nav-link active" href="#contact">Sign Up</a></button>
+        <div class="btns">
+          <button id="load-content-btn" class="btn btn-light btn-lg px-4 me-2">Load Content</button>
+          <button id="toggle-theme-btn" class="btn btn-outline-light btn-lg px-4">Toggle Theme</button>
+        </div>
+      </div>
+
+      <div class="top-image">
+        <img
+          src="imgs/jaimie-phillips-KamSS2euCzA-unsplash.jpg"
+          alt="green ovate leaves with dew drops - photo by Jaime Phillips"
+        />
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 features">
+      <div class="container">
+        <h2 class="text-center mb-5">Dynamic Features</h2>
+        <div class="row" id="features-container">
+          <!-- Features will be loaded dynamically with jQuery -->
+        </div>
+      </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="py-5 productBackClr">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <!-- Cards Container -->
+        <div class="row" id="product-cards">
+          <!-- Product cards will be loaded dynamically with jQuery -->
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p class="mb-4">Stay updated with our latest news and product releases</p>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" id="email-input" placeholder="Enter your email" />
+              <button class="btn btn-info" id="subscribe-btn" type="button">Subscribe</button>
+            </div>
+            <div class="alert alert-success mt-3" id="newsletter-alert">Thank you for subscribing!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-info">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">© 2025 leaflibrary. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
